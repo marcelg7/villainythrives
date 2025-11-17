@@ -1,0 +1,18 @@
+{
+    "name": "Villainy Thrives - Admin",
+    "short_name": "VT Admin",
+    "start_url": "/admin",
+    "background_color": "#111827",
+    "description": "Villainy Thrives Admin Panel - Manage orders, products, and accounting on the go",
+    "display": "standalone",
+    "theme_color": "#DC2626",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/storage/images/villainy-thrives-logo.jpeg",
+            "sizes": "512x512",
+            "type": "image/jpeg",
+            "purpose": "any maskable"
+        }
+    ]
+}
