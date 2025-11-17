@@ -1,0 +1,6 @@
+This web app will be hosted on a Cpanel account on a WHM server.
+
+When we go to deply, we will need instructions on settings this up to work on the cPanel shared hosting account.
+
+
+Good news is, I have access to WHM if we need to set anything up in there.
