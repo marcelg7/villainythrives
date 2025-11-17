@@ -1,2 +1,14 @@
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap
+Sitemap: https://villainythrives.com/sitemap.xml
+
+# Disallow admin and private areas
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /password/
+Disallow: /cart/
+Disallow: /checkout/

@@ -7,6 +7,30 @@
 
     <title>{{ config('app.name', 'Villainy Thrives') }} - @yield('title', 'Choose Loyalty')</title>
 
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="@yield('description', 'Villainy Thrives - Bold apparel for bikers, fighters, wrestling fans, and blue-collar warriors. Est. 2021 in Huron County, Ontario. Choose Loyalty.')">
+    <meta name="keywords" content="@yield('keywords', 'villainy thrives, apparel, t-shirts, hoodies, bikers, fighters, wrestling, blue collar, ontario, canada, choose loyalty')">
+    <meta name="author" content="Villainy Thrives">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="@yield('og_title', config('app.name', 'Villainy Thrives') . ' - Choose Loyalty')">
+    <meta property="og:description" content="@yield('og_description', 'Bold apparel for bikers, fighters, wrestling fans, and blue-collar warriors. Est. 2021 in Huron County, Ontario.')">
+    <meta property="og:image" content="@yield('og_image', asset('storage/images/villainy-thrives-logo.jpeg'))">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ url()->current() }}">
+    <meta property="twitter:title" content="@yield('twitter_title', config('app.name', 'Villainy Thrives') . ' - Choose Loyalty')">
+    <meta property="twitter:description" content="@yield('twitter_description', 'Bold apparel for bikers, fighters, wrestling fans, and blue-collar warriors.')">
+    <meta property="twitter:image" content="@yield('twitter_image', asset('storage/images/villainy-thrives-logo.jpeg'))">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="{{ asset('storage/images/villainy-thrives-logo.jpeg') }}">
+
     <!-- PWA -->
     @laravelPWA
 

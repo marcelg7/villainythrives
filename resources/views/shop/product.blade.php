@@ -2,6 +2,17 @@
 
 @section('title', $product->name)
 
+@section('description', Str::limit($product->description, 155))
+@section('keywords', 'villainy thrives, ' . strtolower($product->category->name) . ', ' . strtolower($product->name) . ', apparel, ontario')
+
+@section('og_title', $product->name . ' - Villainy Thrives')
+@section('og_description', Str::limit($product->description, 200))
+@section('og_image', $product->image_url ?: asset('storage/images/villainy-thrives-logo.jpeg'))
+
+@section('twitter_title', $product->name . ' - Villainy Thrives')
+@section('twitter_description', Str::limit($product->description, 200))
+@section('twitter_image', $product->image_url ?: asset('storage/images/villainy-thrives-logo.jpeg'))
+
 @section('content')
 <div class="bg-gray-900 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
